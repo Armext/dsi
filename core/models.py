@@ -12,7 +12,8 @@ class Persona(models.Model):
     biografia = models.CharField(max_length=500)
     correo = models.CharField(max_length=100)
     dedicacion = models.CharField(max_length=200)
-
+    foto = models.ImageField(upload_to='personas/', null=True, blank=True)
+    
     class Meta:
         ordering = ('apellidos',)
         db_table = 'Persona'

@@ -9,6 +9,6 @@
 {% block background %} {% static 'core/img/home-bg.jpg' %} {% endblock %}
 
 {% block headers %}
-    <h1>Jean Rivera</h1>
-    <span class="subheading">Ingeniero en TICs</span>
+    <h1>{{ persona.nombre }} {{ persona.apellidos }}</h1>
+    <span class="subheading">{{ persona.titulo_academico }}</span>
 {% endblock %}

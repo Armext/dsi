@@ -26,7 +26,6 @@ urlpatterns = [
     path('about/', core_views.about, name='about'),
     path('portfolio/', portfolio_views.portfolio, name='portfolio'),
     path('contact/', core_views.contact, name='contact'),
-    path('personas/', core_views.personas, name='personas'),
 ]
 
 if settings.DEBUG:

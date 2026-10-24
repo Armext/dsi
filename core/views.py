@@ -5,21 +5,18 @@ from .models import Persona
 
 # Create your views here.
 def home(request):
-    return render(request, 'home.html')
-
+    persona = Persona.objects.first()
+    return render(request, 'home.html', {'persona': persona})
 
 def about(request):
-    return render(request, 'about.html')
-
+    persona = Persona.objects.first()
+    return render(request, 'about.html', {'persona': persona})
 
 def contact(request):
-    return render(request, 'contact.html')
+    persona = Persona.objects.first()
+    return render(request, 'contact.html', {'persona': persona})
 
 
 def portfolio(request):
     return render(request, 'portfolio/portfolio.html')
 
-
-def personas(request):
-    lista_personas = Persona.objects.all()
-    return render(request, 'personas/personas.html', context={'personas': lista_personas})

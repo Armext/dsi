@@ -9,6 +9,6 @@
 {% block background %} {% static 'core/img/home-bg.jpg' %} {% endblock %}
 
 {% block headers %}
-    <h2>{{ persona.nombre }} {{ persona.apellidos }}</h2>
+    <h1>{{ persona.nombre }}<br><span style="white-space: nowrap;">{{ persona.apellidos }}</span></h1>
     <span class="subheading">{{ persona.titulo_academico }}</span>
 {% endblock %}
